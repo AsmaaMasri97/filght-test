@@ -182,7 +182,7 @@ export default function Home() {
                 <div className="col-6 col-md-6">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Enter Max Price"
                     value={filte_price}
                     onChange={searchPrice}
@@ -191,7 +191,7 @@ export default function Home() {
                 <div className="col-6 col-md-6">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Enter Duration"
                     value={filte_duration}
                     onChange={searchDuration}
@@ -212,8 +212,8 @@ export default function Home() {
               trpiz.map((trip, index) => {
                 return (
                   <div className="col-md-4" style={{ marginBottom: "1rem" }}>
-                    <div class="col">
-                      <div class="card">
+                    <div className="col">
+                      <div className="card">
                         <Image
                           src={"/" + `${trip.img}`}
                           height={200}
@@ -257,7 +257,7 @@ export default function Home() {
                 );
               })
             ) : (
-              <div>Sorry ! We don't have trip !</div>
+              <div>Sorry ! We dont have trip !</div>
             )}
           </div>
         </div>
