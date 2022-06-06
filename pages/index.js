@@ -100,7 +100,7 @@ export default function Home() {
         <div className={styles.backgroundheader}>
           <div className={styless.navbarup}>
             <a>
-              <Image src={logo} />
+              <Image src={logo} alt="" />
             </a>
             <div
               className="container"
@@ -218,6 +218,7 @@ export default function Home() {
                           src={"/" + `${trip.img}`}
                           height={200}
                           width={200}
+                          alt=""
                         />
                         <div className="card-body">
                           <h5 className="card-title">
