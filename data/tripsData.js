@@ -1,12 +1,12 @@
 export const Trips = [
   {
     id: 1,
-    originPlaceValue: "Dubi",
+    originPlaceValue: "Dubai",
     destintionPlace: "Italy",
-    startDate: "2022-06-07",
+    startDate: "2022-06-10",
     endDate: "2022-06-17",
     img: "flight1.jpg",
-    duration: 10,
+    duration: 7,
     price: 1500,
   },
   {
@@ -51,7 +51,7 @@ export const Trips = [
   },
   {
     id: 6,
-    originPlaceValue: "Dubi",
+    originPlaceValue: "Dubai",
     destintionPlace: "Italy",
     startDate: "2022-09-01",
     endDate: "2022-09-10",

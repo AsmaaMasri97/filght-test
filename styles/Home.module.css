@@ -25,5 +25,6 @@
 @media (max-width: 600px) {
     .backgroundheader{
         height: 100vh;
+        background-image: url(/background.jpg);
     }
 }
