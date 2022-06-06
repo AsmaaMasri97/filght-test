@@ -29,8 +29,8 @@ export default function Home() {
   const [end_date, setEndDate] = useState(null);
   const [origin_place, setOriginPlace] = useState();
   const [dest_place, setDestintionPlace] = useState();
-  const [found, setFound] = useState(false);
-  const [trpiz, settrpiz] = useState(Trips);
+  const [found, setFound, , getFound] = useState(false);
+  const [trpiz, setTripz] = useState(Trips);
   useEffect(() => {}, [
     start_date,
     end_date,
@@ -60,14 +60,11 @@ export default function Home() {
         Trips[i].endDate === moment(end_date).format("YYYY-MM-DD")
       ) {
         setFound(true);
-        settrpiz([Trips[i]]);
+        setTripz([Trips[i]]);
         break;
       } else {
-        settrpiz([]);
+        setTripz([]);
       }
-    }
-    if (found === false) {
-      alert("we are sorry ! We do not have flights to suit your requirements.");
     }
   };
   const startSearch = () => {
@@ -76,17 +73,17 @@ export default function Home() {
         (trip) => trip.price <= filte_price && trip.duration == filte_duration
       );
       console.log(pricrdurationSearch);
-      settrpiz(pricrdurationSearch);
+      setTripz(pricrdurationSearch);
     } else if (filte_price != "") {
       console.log(filte_price);
       priceSearch = Trips.filter((trip) => trip.price <= filte_price);
       console.log(priceSearch);
-      settrpiz(priceSearch);
+      setTripz(priceSearch);
     } else if (filte_duration != "") {
       console.log(filte_price);
       durationSearch = Trips.filter((trip) => trip.duration == filte_duration);
       console.log(durationSearch);
-      settrpiz(durationSearch);
+      setTripz(durationSearch);
     }
     setFilterPrice("");
     setFilterDuration("");
@@ -211,7 +208,7 @@ export default function Home() {
         </div>
         <div className="container">
           <div className="row">
-            {trpiz.length >= 0 || trpiz !== [] ? (
+            {trpiz.length >= 0 ? (
               trpiz.map((trip, index) => {
                 return (
                   <div

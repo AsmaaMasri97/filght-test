@@ -5,7 +5,7 @@ export const OriginPlace = [
   },
   {
     key: 2,
-    value: "Dubi",
+    value: "Dubai",
   },
   {
     key: 3,
