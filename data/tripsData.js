@@ -1,5 +1,6 @@
 export const Trips = [
   {
+    id: 1,
     originPlaceValue: "Dubi",
     destintionPlace: "Italy",
     startDate: "2022-06-07",
@@ -9,6 +10,7 @@ export const Trips = [
     price: 1500,
   },
   {
+    id: 2,
     originPlaceValue: "Syria",
     destintionPlace: "Austria",
     startDate: "2022-07-07",
@@ -18,6 +20,7 @@ export const Trips = [
     price: 1000,
   },
   {
+    id: 3,
     originPlaceValue: "Lebanon",
     destintionPlace: "Canada",
     startDate: "2022-07-01",
@@ -27,6 +30,7 @@ export const Trips = [
     price: 5000,
   },
   {
+    id: 4,
     originPlaceValue: "Syria",
     destintionPlace: "US",
     startDate: "2022-08-01",
@@ -36,6 +40,7 @@ export const Trips = [
     price: 2000,
   },
   {
+    id: 5,
     originPlaceValue: "Syria",
     destintionPlace: "Spain",
     startDate: "2022-06-14",
@@ -45,6 +50,7 @@ export const Trips = [
     price: 3000,
   },
   {
+    id: 6,
     originPlaceValue: "Dubi",
     destintionPlace: "Italy",
     startDate: "2022-09-01",

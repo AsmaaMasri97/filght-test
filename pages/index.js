@@ -211,7 +211,11 @@ export default function Home() {
             {trpiz.length >= 0 || trpiz !== [] ? (
               trpiz.map((trip, index) => {
                 return (
-                  <div className="col-md-4" style={{ marginBottom: "1rem" }}>
+                  <div
+                    className="col-md-4"
+                    style={{ marginBottom: "1rem" }}
+                    key={trip.id}
+                  >
                     <div className="col">
                       <div className="card">
                         <Image

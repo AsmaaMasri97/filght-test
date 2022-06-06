@@ -10,7 +10,7 @@ export const DropdownButton = (props) => {
       {props.data.length > 0 ? (
         props.data.map((place, i) => (
           <>
-            <option selected disabled hidden>
+            <option key={i} selected disabled hidden>
               {props.placeholde}
             </option>
             <option key={i} value={place.value}>
