@@ -6,7 +6,7 @@ export const Trips = [
     endDate: "2022-06-17",
     img: "flight1.jpg",
     duration: 10,
-    price: 1500,
+    price: 1000,
   },
   {
     originPlaceValue: "Syria",
@@ -42,7 +42,7 @@ export const Trips = [
     endDate: "2022-06-30",
     img: "flight5.jpg",
     duration: 17,
-    price: 3000,
+    price: 2000,
   },
   {
     originPlaceValue: "Dubi",

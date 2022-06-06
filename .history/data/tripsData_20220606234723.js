@@ -6,7 +6,7 @@ export const Trips = [
     endDate: "2022-06-17",
     img: "flight1.jpg",
     duration: 10,
-    price: 1500,
+    price: 1000,
   },
   {
     originPlaceValue: "Syria",
